@@ -39,7 +39,7 @@ public class Command_gtfo extends TFM_Command
             reason = StringUtils.join(ArrayUtils.subarray(args, 1, args.length), " ");
         }
 
-        TFM_Util.bcastMsg(player.getName() + " has been a VERY naughty, naughty person.", ChatColor.RED);
+        TFM_Util.bcastMsg(player.getName() + " has been a VERY bad player.", ChatColor.RED);
 
         // Silently rollback the user with CoreProtect
         server.dispatchCommand(sender, "co rb u:" + player.getName() + " t:24h r:global #silent");
